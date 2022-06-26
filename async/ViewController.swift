@@ -13,7 +13,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+ 
+    @IBAction func actionButton(_ sender: Any) {
+        
+        BaseContainer.appDelegate.pznliste.get(pznType: "LAGER", coHandler: {text,error,ok,result in
+            print(ok)
+            
+            
+        })
+        
+        
+    }
+    
 }
 

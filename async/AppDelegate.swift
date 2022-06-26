@@ -11,9 +11,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    let pznliste = PZNListe()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        BaseContainer.appDelegate = self
+        
         return true
     }
 
